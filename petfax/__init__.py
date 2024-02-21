@@ -7,8 +7,8 @@ def create_app():
     def hello():
         return 'Hello!'
     
-    @app.route('/pets')
-    def pets():
-        return 'These are our pets available for adoption!'
+    #register blueprint
+    from . import pet
+    app.register_blueprint(pet.bp)
 
     return app
