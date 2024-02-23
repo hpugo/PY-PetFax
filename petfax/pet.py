@@ -19,3 +19,4 @@ def get_pet(id):
 @bp.route('/fact_submit')
 def fact_submit():
     return render_template('fact_submit.html')
+
